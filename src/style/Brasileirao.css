@@ -1,0 +1,72 @@
+#brasileirao {
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 800px) {
+  #brasileirao {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+table {
+  width: 100%;
+  max-width: 100vw;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+td,
+th {
+  height: 30px;
+}
+
+th {
+  background: #dfdfdf;
+  font-weight: 100;
+}
+
+td {
+  background: #fafafa;
+  text-align: center;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+table.stripe-vertical tr td:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+table.stripe-vertical tr td:nth-child(even) {
+  background: #fefefe;
+}
+
+table.stripe-horizontal tr:nth-child(odd) td {
+  background: #f1f1f1;
+}
+
+table.stripe-horizontal tr:nth-child(even) td {
+  background: #fefefe;
+}
+
+.legenda {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.legenda svg {
+  width: 12px;
+}
+
+.legenda span {
+  margin-left: 10px;
+}
+
+div.follow {
+  cursor: pointer;
+}

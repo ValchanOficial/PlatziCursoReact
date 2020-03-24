@@ -1,0 +1,15 @@
+.heart {
+  fill: transparent;
+  stroke: #333;
+  width: 16px;
+}
+
+.heart.colored {
+  fill: #c0392b;
+  stroke: transparent;
+}
+
+.heart.colored.non-interactive {
+  fill: #f3c3bd;
+  stroke: transparent;
+}

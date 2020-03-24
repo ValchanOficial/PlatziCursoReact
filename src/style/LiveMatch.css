@@ -1,0 +1,140 @@
+#live {
+  padding: 0.5em;
+}
+
+@media only screen and (min-width: 800px) {
+  #live {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.realtime-warning {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  margin-right: 1em;
+  font-size: 10px;
+  color: #999;
+  font-style: italic;
+  animation: blink 2s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    color: #555;
+  }
+  50% {
+    color: #999;
+  }
+  100% {
+    color: #555;
+  }
+}
+
+.match {
+  font-weight: 100;
+  text-align: center;
+  padding: 0.3em 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.match-header .home-team,
+.match-header .away-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.match-header .team-name {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.match-header .team-score {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.match-header .versus {
+  flex: 1;
+}
+
+.match-info .match-date {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+}
+.timeline .timeline-date {
+  border-bottom: 2px solid #27ae60;
+  display: inline-block;
+  margin: 0;
+}
+
+.timeline .timeline-date .half-time {
+  display: block;
+  font-weight: 100;
+  font-size: 30px;
+  color: #777;
+  text-align: center;
+}
+
+.timeline .timeline-date .half {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.timeline > li .timeline-content {
+  margin-left: 1em;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline > li .timeline-date {
+    width: 110px;
+    float: left;
+    border-bottom: none;
+    margin-top: 5px;
+  }
+  .timeline > li .timeline-content {
+    margin-left: 0;
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+    line-height: 2;
+  }
+  .timeline > li .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #27ae60;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}
