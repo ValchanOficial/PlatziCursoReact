@@ -1,6 +1,6 @@
 # Bolsa de Estudos do Facebook Developer Circles
 
-- Platzi - Curso de Desenvolvimento com React.js
+- [Platzi](https://platzi.com.br/) - Curso de Desenvolvimento com React.js
 
 ```javascript
     npm install
